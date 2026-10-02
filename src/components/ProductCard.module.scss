@@ -80,14 +80,14 @@
     justify-content: space-between;
     gap: 8px;
     font-size: 12px;
+  }
 
-    span:first-child {
-      color: #89939a;
-    }
+  div span:first-child {
+    color: #89939a;
+  }
 
-    span:last-child {
-      color: #313237;
-      text-align: right;
-    }
+  div span:last-child {
+    color: #313237;
+    text-align: right;
   }
 }

@@ -31,6 +31,7 @@ export const ProductCard = ({ product }: Props) => {
         {product.fullPrice > product.price && (
           <>
             <span className={styles.fullPrice}>${product.fullPrice}</span>
+
             <span className={styles.discount}>-{discount}%</span>
           </>
         )}

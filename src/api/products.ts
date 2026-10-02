@@ -4,8 +4,10 @@ export const getProducts = async (): Promise<Product[]> => {
   const response = await fetch('/api/products.json');
 
   if (!response.ok) {
-    throw new Error('Failed to load products');
+    throw new Error(`Failed to load products: ${response.status}`);
   }
 
-  return response.json();
+  const products: Product[] = await response.json();
+
+  return products;
 };
