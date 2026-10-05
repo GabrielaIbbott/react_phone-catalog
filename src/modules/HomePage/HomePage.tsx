@@ -91,7 +91,10 @@ export const HomePage = () => {
             <div className={styles.categories}>
               <Link to="/phones" className={styles.category}>
                 <div className={styles.categoryImage}>
-                  <img src="/img/category-phones.png" alt="Mobile phones" />
+                  <img
+                    src={`${import.meta.env.BASE_URL}img/category-phones.png`}
+                    alt="Mobile phones"
+                  />
                 </div>
 
                 <h3>Mobile phones</h3>
@@ -101,7 +104,10 @@ export const HomePage = () => {
 
               <Link to="/tablets" className={styles.category}>
                 <div className={styles.categoryImage}>
-                  <img src="/img/category-tablets.png" alt="Tablets" />
+                  <img
+                    src={`${import.meta.env.BASE_URL}img/category-tablets.png`}
+                    alt="Tablets"
+                  />
                 </div>
 
                 <h3>Tablets</h3>
@@ -111,7 +117,10 @@ export const HomePage = () => {
 
               <Link to="/accessories" className={styles.category}>
                 <div className={styles.categoryImage}>
-                  <img src="/img/category-accessories.png" alt="Accessories" />
+                  <img
+                    src={`${import.meta.env.BASE_URL}img/category-accessories.png`}
+                    alt="Accessories"
+                  />
                 </div>
 
                 <h3>Accessories</h3>

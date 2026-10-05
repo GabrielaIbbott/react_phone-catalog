@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
+
 import { Product } from '../types/Product';
+
 import styles from './ProductCard.module.scss';
 
 type Props = {
@@ -15,7 +17,7 @@ export const ProductCard = ({ product }: Props) => {
     <article className={styles.card}>
       <Link to={`/product/${product.itemId}`} className={styles.imageLink}>
         <img
-          src={`/${product.image}`}
+          src={`${import.meta.env.BASE_URL}${product.image}`}
           alt={product.name}
           className={styles.image}
         />
