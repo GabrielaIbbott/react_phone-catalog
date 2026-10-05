@@ -1,21 +1,20 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-
 import styles from './PicturesSlider.module.scss';
 
 const slides = [
   {
-    image: `${import.meta.env.BASE_URL}img/banner-phones.png`,
+    image: '/img/banner-phones.png',
     link: '/phones',
     alt: 'Phones',
   },
   {
-    image: `${import.meta.env.BASE_URL}img/banner-tablets.png`,
+    image: '/img/banner-tablets.png',
     link: '/tablets',
     alt: 'Tablets',
   },
   {
-    image: `${import.meta.env.BASE_URL}img/banner-accessories.png`,
+    image: '/img/banner-accessories.png',
     link: '/accessories',
     alt: 'Accessories',
   },
