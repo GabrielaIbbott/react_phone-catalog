@@ -1,9 +1,13 @@
 import { useEffect, useState } from 'react';
+
 import { Link } from 'react-router-dom';
 
 import { getProducts } from '../../api/products';
+
 import { ProductCard } from '../../components/ProductCard';
+
 import { PicturesSlider } from '../../components/PicturesSlider/PicturesSlider';
+
 import { Product } from '../../types/Product';
 
 import styles from './HomePage.module.scss';
@@ -91,7 +95,7 @@ export const HomePage = () => {
             <div className={styles.categories}>
               <Link to="/phones" className={styles.category}>
                 <div className={styles.categoryImage}>
-                  <img src="/img/category-phones.png" alt="Mobile phones" />
+                  <img src="img/category-phones.png" alt="Mobile phones" />
                 </div>
 
                 <h3>Mobile phones</h3>
@@ -101,7 +105,7 @@ export const HomePage = () => {
 
               <Link to="/tablets" className={styles.category}>
                 <div className={styles.categoryImage}>
-                  <img src="/img/category-tablets.png" alt="Tablets" />
+                  <img src="img/category-tablets.png" alt="Tablets" />
                 </div>
 
                 <h3>Tablets</h3>
@@ -111,7 +115,7 @@ export const HomePage = () => {
 
               <Link to="/accessories" className={styles.category}>
                 <div className={styles.categoryImage}>
-                  <img src="/img/category-accessories.png" alt="Accessories" />
+                  <img src="img/category-accessories.png" alt="Accessories" />
                 </div>
 
                 <h3>Accessories</h3>
