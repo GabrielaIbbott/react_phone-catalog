@@ -4,17 +4,17 @@ import styles from './PicturesSlider.module.scss';
 
 const slides = [
   {
-    image: '/img/banner-phones.png',
+    image: 'img/banner-phones.png',
     link: '/phones',
     alt: 'Phones',
   },
   {
-    image: '/img/banner-tablets.png',
+    image: 'img/banner-tablets.png',
     link: '/tablets',
     alt: 'Tablets',
   },
   {
-    image: '/img/banner-accessories.png',
+    image: 'img/banner-accessories.png',
     link: '/accessories',
     alt: 'Accessories',
   },
